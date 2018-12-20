@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    var numbers = parseInt(prompt("Input"));
+    var count = 0;
+    var n = 2;
+
+    while (count < numbers) {
+        var test = 1;
+        for (var j = 2; j <= Math.sqrt(n); j++)
+            if (n%j== 0) {
+                test = 0;
+                break;
+            }
+            if (test == 1) {
+                document.write(' ' + n);
+                count++;
+            }
+        n ++;
+        }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = parseInt(prompt("Enter the number:"));
+    var kiemtra= true;
+    if (num < 2){
+        soNT = false;
+    } else if (num ==2){
+        soNT = true;
+        } else if (num % 2 ==0) {
+        soNT = false;
+    } else {
+        for (var i = 3; i < num; i += 2) {
+            if (num % i == 0) {
+                soNT = false;
+                break;
+            }
+
+        }
+    }
+    if (soNT == true){
+        document.write(num + " la so nguyen to");
+    } else {
+        document.write(num + "  khong la so nguyen to");
+
+    }
+
+</script>
+</body>
+</html>
